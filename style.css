@@ -1,74 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 ::selection {
-  color: black;
-  background: white;
+    color: black;
+    background: white;
 }
 
 nav {
-  position: fixed;
-  background: rgb(21,21,21);
-  width: 100%;
-  padding: 10px 0;
-  z-index: 12;
+    position: fixed;
+    background: rgb(21, 21, 21);
+    width: 100%;
+    padding: 15px 0;
+    z-index: 12;
 }
 
-nav .menu {
-  max-width: 1250;
-  margin: auto;
-  displey: flex;
-  align-items: center;
-  justify-content: sapce-between;
-  padding: 0 20px;
+.menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.menu .logo a {
-  text-decoration: none;
-  color: white;
-  font-size: 53px;
-  font-wight: 600;
+.menu__logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .menu ul {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .menu ul li {
-  list-style: none;
-  margin-left: 7px;
+    list-style: none;
+    margin-left: 7px;
 }
 
 .menu ul li:first-child {
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 .menu ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-
-.menu ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 30px 0;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
@@ -82,9 +65,9 @@ nav .menu {
 }
 
 .background {
-    background: url('background.jpg') no-repeat;
-    width: 100vw;
+    background: url(background.jpg) no-repeat;
     height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -97,14 +80,14 @@ nav .menu {
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
-  
+
 .posisi {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -114,7 +97,7 @@ nav .menu {
     font-weight: 600;
 }
 
-  .posisi h2 {
+.posisi h2 {
     color: white;
     font-size: 50px;
     font-weight: 600;
@@ -122,7 +105,6 @@ nav .menu {
 
 .posisi p {
     color: white;
-    font-size: 20px;
 }
 
 .posisi .tombol {
@@ -141,12 +123,15 @@ nav .menu {
     padding: 0 10px;
     cursor: pointer;
     outline: none;
-    background: none;
-    color: white;
     transition: all 0.3s ease;
 }
 
-.posisi .tombol button:first-child:hover {
+.posisi .tombol button:first-child {
+    color: white;
+    background: none;
+}
+
+.tombol button:first-child:hover {
     background: white;
     color: black;
 }
